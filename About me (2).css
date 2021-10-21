@@ -1,0 +1,141 @@
+@import url('https://font.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0%;
+    font-family: 'Poppins', sans-serif;
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100vh;
+    background: #0a1d27;
+}
+.card
+{
+    position: relative;
+    width: 320px;
+    height: 420px;
+    background: #122936;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.card::before
+{
+    content: '';
+    position: absolute;
+    top: -50%;
+    width: 100%;
+    height: 100%;
+    background: #2196f3;
+    transform: skewY(345deg);
+    transition: 0.5s;
+}
+.card:hover::before
+{
+    top: -50%;
+    transform: skewY(390deg);
+}
+.card::after
+{
+    content: 'Vann';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-weight: 600;
+    font-size: 8em;
+    color: rgb(0, 0, 0, 0.1);
+
+}
+.card .imgBx
+{
+    position: relative;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    z-index: 1;
+}
+.card .imgBx img
+{
+    max-width: 100%;
+    transition: 0.5s;
+}
+.card:hover .imgBx img
+{
+    max-width: 50%;
+}
+h3
+{
+    position: relative;
+}
+button
+{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+button a
+{
+    color: white;
+}
+h3
+{
+    color: white;
+}
+h2
+{
+    color: white;
+}
+.card .contentBx
+{
+    position: relative;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+}
+.card .contentBx h3
+{
+    font-size: px;
+    color: white;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.card .contentBx .price
+{
+    font-size: 24px;
+    color: white;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.card .contentBx a
+{
+    position: relative;
+    padding: 10px 30px;
+    margin-top: 15px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.5s;
+}
+.card:hover .contentBx .buy
+{
+    top: 0;
+    opacity: 1;
+}
